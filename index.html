@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>forto folio</title>
+</head>
+<style>
+    .form{
+    display: flex;
+    gap: 100px;
+    border: 2px solid black;
+    border: 2px solid black;
+    padding-left: 200px;
+    
+
+
+}
+.form-output{
+    justify-content: center;
+    border: 2px solid black;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    
+    
+}
+
+.box{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 2px solid black;
+    background-color: beige;
+}
+</style>
+<body>
+   
+<header>
+
+<div class="container">
+    <div class="home"><a style="color: aliceblue;" href="index.html">home</a></div>
+    <div class="about"><a style="color: aliceblue;" href="about.html">about</a></div>
+    <div class="contac"><a style="color: aliceblue;" href="contac.html">contac</a></div>
+</div>
+</header>
+     <main>
+
+        <section id="hero">
+            <div class="cobtainer">
+                <div class="hero">
+                    <h1 class="hero-title"> REVO U  </h1>
+                     
+                       <p class="teks-title">REVO U ADALAH TEMPAT BELAJAR YANG ASIK DAN MENYENANGKAN    </p>                       
+                     <img  class="img-hero" src="./images/IMG_20230219_034032.jpg" alt="">
+                </div>
+            </div>
+            <hr class="hero-line">
+            </section>
+
+
+                <section id="headquarter">
+                    <div class="coltainer">
+                        <h1 class="text">our partner</h1>
+                        <div class="galery">
+                            <div class="city">
+                                <img class="box-galery"  src="./images/evan.png" alt="" width="180px">
+                                <p>evan</p>
+                            </div>
+                            <div class="city">
+                                <img class="box-galery" src="./images/dewaayu.jpg" alt="" width="200px" >
+                                <p>dewa ayu</p>
+                            </div>
+                            <div class="city">
+                                <img class="box-galery" src="./images/yaya.jpg" alt="" width="200px">
+                                <p>yaya</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <hr class="hero-line">
+                </section>
+
+
+                <h1 class="text">masagger</h1>
+                <section class="content">
+                   
+                    <div  class="ab">
+                      <form action="" class="bc">
+                        <br> <br> <br>
+                        <label for="nama ">nama </label> <input type="text" id="nama">
+                         <br>
+                        <label for="tanggal lahir"> tanggal lahir</label> <input type="date" id="tanggal lahir">
+                        <br>
+                        <label for="jenis kelamin">jenis kelamin</label> 
+                        
+                         <label for="lakilaki">lakilaki</label>
+                        <input type="radio" id="lakilaki">
+                        <label for="erempuan">perempuan</label>
+                        <input type="radio" id="perempuan">
+                        <br>
+                       <label for="pesan">pesan</label>
+                       <br>
+                        <textarea name="" id="" cols="30" rows="10">pesan</textarea>
+                        <br>
+                           <button>submit</button  >
+                      </form>
+            
+                   
+                    
+                   
+                        <table  border="" callpadding="2" callspacing="5" >
+                            
+                                
+                                    <tr>
+                                        <th>nama</th>
+                                        <th>tanggal lahir</th>
+                                        <th>jenis kelamin </th>
+                                        <th>pesan</th>
+                                        <th>profile </th>
+                                        <th>delet</th>
+                                    </tr>
+                    
+                                    <tr>
+                                        <td>ikham</td>
+                                        <td>7 agustus 1945</td>
+                                        <td>laki-laki</td>
+                                        <td>belajar websate</td>
+                                        <td><a href="">klik disini</a> </td>
+                                        <td>gambar </td>
+                                    </tr>
+            
+            
+            
+                                    <tr>
+                                        <td>aliando sarif</td>
+                                        <td>18 januari 2001</td>
+                                        <td>laki-laki</td>
+                                        <td>hello word</td>
+                                        <td><a href="">klik disini</a> </td>
+                                        <td>gambar </td>
+                                    </tr>
+                                    <tr>
+                                        <td>riandi aldo renata</td>
+                                        <td>5 februari 1945</td>
+                                        <td>laki-laki</td>
+                                        <td>haloo dunia</td>
+                                        <td><a href="">klik disini</a> </td>
+                                        <td>gambar </td>
+                                    </tr>
+                                    <tr>
+                                        <td>latifah  azizah</td>
+                                        <td>8 januari 2004</td>
+                                        <td>perempuan</td>
+                                        <td>selaat datang</td>
+                                        <td><a href="">klik disini</a> </td>
+                                        <td>gambar </td>
+                                    </tr>
+                                
+                        </table>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="form">
+                        <div class="box">
+                
+                <form name="message-form" onsubmit="return validateForm()" class="message-form">
+                nama:  <input placeholder="nama" type="text" name="full-name">
+                <br>
+                jenis kelamin:
+                <input type="date" name="birth-date">
+                <br>
+                jenis kelamin:
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">laki-laki</label>
+                <input type="radio" id="famale" name="gender" value="female">
+                <label for="female">perempuan</label>
+                <br>
+                pesan:
+                <textarea placeholder="pesan" name="messages" id="" cols="30" rows="10"></textarea>
+                <br>
+                <input type="submit" value="Submit">
+                </form>
+                </div>
+                    
+                    <script>
+                        function validateForm() {
+                            var name =document.forms["message-form"]["full-name"].value;
+                            var date =document.forms["message-form"]["birth-date"].value;
+                            var gender =document.forms["message-form"]["gender"].value;
+                            var messages =document.forms["message-form"]["messages"].value;
+                           
+                            console.log({name});
+                            if ( name =="" || date ==""|| gender ==""|| messages==""){
+                                alert("input tidak boleh kosong");
+                                return false;
+                            }
+                
+                            document.getElementById("sender-full-name").innerText=name;
+                            document.getElementById("sender-birth-date").innerText=date;
+                            document.getElementById("sender-gender").innerText=gender;
+                            document.getElementById("sender-messages").innerText=messages;
+                            return false;
+                
+                
+                        }
+                        
+                    </script>
+                    <div class="form-output" >
+                       
+                        <p> nama;<span id="sender-full-name"></span> </p>
+                        <p>tanggal lahir; <span id="sender-birth-date"></span></p>
+                        <p>jenis kelamin; <span id="sender-gender"></span> </p>
+                        <p>pesan; <span id="sender-messages"></span></p>
+                       
+                       
+                    </div>
+                </div>
+                </section>
+
+     </main>
+     <footer>
+        
+    <h1 style="float: right;margin: 50px 50px 50px 50px; color: yellow; background-color: rgb(29, 28, 26);" >revo u</h1>
+
+     </footer>
+    
+</body>
+</html>
